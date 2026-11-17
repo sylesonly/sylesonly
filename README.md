@@ -1,12 +1,6 @@
 <p align="center">
-  <img src="banner-bm.svg" alt="Bajram Murati" width="100%">
+  <img src="banner-bm.gif" alt="Bajram Murati" width="100%">
 </p>
-
-<p align="center">
-  <img src="avatar-anim.gif" alt="" width="240">
-</p>
-
-<h2 align="center">Hi, I'm Bajram Murati</h2>
 
 <p align="center">
   <b>Business Process &amp; System Engineer</b> · CEO of the4ce GmbH<br>
