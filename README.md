@@ -3,6 +3,12 @@
 </p>
 
 <p align="center">
+  <img src="avatar-anim.gif" alt="" width="240">
+</p>
+
+<h2 align="center">Hi, I'm Bajram Murati</h2>
+
+<p align="center">
   <b>Business Process &amp; System Engineer</b> · CEO of the4ce GmbH<br>
   I connect business processes with the systems behind them: ERP, workflow automation and AI.<br>
   Strong in <b>Python</b> and in designing <b>AI system architectures</b>. Future-oriented: I build for what comes next.
