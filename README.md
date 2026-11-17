@@ -14,10 +14,8 @@
   <a href="mailto:murati.bajram@gmail.com"><img src="https://img.shields.io/badge/murati.bajram@gmail.com-0E1A22?style=for-the-badge&logo=gmail&logoColor=5FE3C8"></a>
 </p>
 
+<br>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-0E1115?style=flat-square&logo=python&logoColor=5FE3C8">
-  <img src="https://img.shields.io/badge/Docker-0E1115?style=flat-square&logo=docker&logoColor=5FE3C8">
-  <img src="https://img.shields.io/badge/n8n-0E1115?style=flat-square&logo=n8n&logoColor=5FE3C8">
-  <img src="https://img.shields.io/badge/ERPNext-0E1115?style=flat-square&logo=frappe&logoColor=5FE3C8">
-  <img src="https://img.shields.io/badge/Local_LLMs-0E1115?style=flat-square&logo=ollama&logoColor=5FE3C8">
+  <img src="skills.svg" alt="Stack & Skills" width="100%">
 </p>
