@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="Syles" width="100%">
+  <img src="banner.svg?v=3" alt="Bajram Murati" width="100%">
 </p>
 
 <p align="center">
@@ -8,7 +8,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Open_to_new_IT_roles-0E1A22?style=flat-square&logoColor=5FE3C8&labelColor=0E1A22&color=5FE3C8">
+  <img src="https://img.shields.io/badge/Open_to_new_IT_roles-5FE3C8?style=for-the-badge&labelColor=0E1A22">
+  <br><br>
+  <a href="https://www.linkedin.com/in/bajram-murati-1a2248257/"><img src="https://img.shields.io/badge/LinkedIn-0E1A22?style=for-the-badge&logo=linkedin&logoColor=5FE3C8"></a>
+  <a href="mailto:murati.bajram@gmail.com"><img src="https://img.shields.io/badge/murati.bajram@gmail.com-0E1A22?style=for-the-badge&logo=gmail&logoColor=5FE3C8"></a>
 </p>
 
 <p align="center">
