@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<style>
+.spinA{transform-origin:512px 512px;animation:spin 16s linear infinite}
+.spinB{transform-origin:512px 512px;animation:spin 23s linear infinite reverse}
+.spinC{transform-origin:512px 512px;animation:spin 30s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.lids{transform-origin:512px 496px;animation:open 1.1s .6s cubic-bezier(.2,.8,.2,1) backwards,blink 7s 4s infinite}
+@keyframes open{0%{transform:scaleY(.04)}60%{transform:scaleY(1.12)}100%{transform:scaleY(1)}}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.05)}}
+.eyeglow{animation:eg 1.6s .6s ease-out backwards, pulse 3s 2s ease-in-out infinite}
+@keyframes eg{0%{opacity:0}100%{opacity:1}}
+@keyframes pulse{0%,100%{opacity:.8}50%{opacity:1}}
+.core{transform-origin:512px 318px;animation:core 2.4s ease-in-out infinite}
+@keyframes core{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.ring{animation:ring 3.5s ease-in-out infinite}
+@keyframes ring{0%,100%{opacity:.8}50%{opacity:1}}
+</style>
+<defs>
+<radialGradient id="bg" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#0C1A22"/><stop offset=".65" stop-color="#05090D"/><stop offset="1" stop-color="#020304"/></radialGradient>
+<filter id="plasma" x="-25%" y="-25%" width="150%" height="150%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="4" result="n"/>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="52" xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="5" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="d"/></feMerge>
+</filter>
+<filter id="plasma2" x="-25%" y="-25%" width="150%" height="150%">
+  <feTurbulence type="turbulence" baseFrequency="0.07" numOctaves="2" seed="11" result="n"/>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="plasma3" x="-25%" y="-25%" width="150%" height="150%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="n"/>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="80" xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="12"/>
+</filter>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="bigglow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="26"/></filter>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="34"/></filter>
+<linearGradient id="ringA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5FE3C8"/><stop offset=".5" stop-color="#2FB8FF"/><stop offset="1" stop-color="#8B6CFF"/></linearGradient>
+<linearGradient id="ringB" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFFFFB"/><stop offset=".5" stop-color="#5FE3C8"/><stop offset="1" stop-color="#2FB8FF"/></linearGradient>
+<linearGradient id="ringC" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8B6CFF"/><stop offset="1" stop-color="#5FE3C8"/></linearGradient>
+<linearGradient id="mask" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D2C37"/><stop offset=".5" stop-color="#0B1218"/><stop offset="1" stop-color="#030405"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9FF5E4" stop-opacity=".95"/><stop offset="1" stop-color="#5FE3C8" stop-opacity=".05"/></linearGradient>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<circle cx="512" cy="512" r="360" fill="none" stroke="#2FB8FF" stroke-width="110" opacity=".22" filter="url(#soft)"/>
+<g class="ring">
+  <g class="spinC"><circle cx="512" cy="512" r="362" fill="none" stroke="url(#ringC)" stroke-width="40" opacity=".55" filter="url(#plasma3)"/></g>
+  <g class="spinA"><circle cx="512" cy="512" r="356" fill="none" stroke="url(#ringA)" stroke-width="24" filter="url(#plasma)"/></g>
+  <g class="spinB"><circle cx="512" cy="512" r="356" fill="none" stroke="url(#ringB)" stroke-width="7" filter="url(#plasma2)"/></g>
+  <circle cx="512" cy="512" r="356" fill="none" stroke="#F2FFFC" stroke-width="2.5" opacity=".75"/>
+</g>
+<ellipse cx="512" cy="760" rx="170" ry="40" fill="#5FE3C8" opacity=".08" filter="url(#soft)"/>
+<path d="M512 222 L620 292 L676 416 L668 566 L616 690 L544 778 L512 800 L480 778 L408 690 L356 566 L348 416 L404 292 Z" fill="url(#mask)"/>
+<path d="M512 222 L620 292 L676 416 L668 566 L616 690 L544 778 L512 800 L480 778 L408 690 L356 566 L348 416 L404 292 Z" fill="none" stroke="url(#edge)" stroke-width="3.5"/>
+<g fill="none" stroke="#5FE3C8" stroke-opacity=".26" stroke-width="2.5">
+  <path d="M512 370 L512 800"/>
+  <path d="M404 292 L466 410 L512 432 L558 410 L620 292"/>
+  <path d="M356 566 L436 604 L512 616 L588 604 L668 566"/>
+  <path d="M408 690 L466 668 L512 712 L558 668 L616 690"/>
+  <path d="M348 416 L418 462"/><path d="M676 416 L606 462"/>
+  <path d="M380 520 L360 610"/><path d="M644 520 L664 610"/>
+</g>
+<path d="M384 470 L496 448" stroke="#9FF5E4" stroke-opacity=".5" stroke-width="3"/>
+<path d="M640 470 L528 448" stroke="#9FF5E4" stroke-opacity=".5" stroke-width="3"/>
+<g class="eyeglow">
+  <ellipse cx="512" cy="496" rx="150" ry="34" fill="#5FE3C8" opacity=".35" filter="url(#bigglow)"/>
+  <g class="lids" filter="url(#glow)">
+    <path d="M388 486 L494 462 L484 512 L408 516 Z" fill="#5FE3C8"/>
+    <path d="M636 486 L530 462 L540 512 L616 516 Z" fill="#5FE3C8"/>
+    <path d="M418 490 L486 474 L480 500 L426 504 Z" fill="#F4FFFC"/>
+    <path d="M606 490 L538 474 L544 500 L598 504 Z" fill="#F4FFFC"/>
+  </g>
+</g>
+<g class="core" filter="url(#glow)">
+  <polygon points="512.0,284.0 541.4,301.0 541.4,335.0 512.0,352.0 482.6,335.0 482.6,301.0" fill="none" stroke="#9FF5E4" stroke-width="5"/>
+  <polygon points="512.0,302.0 525.9,310.0 525.9,326.0 512.0,334.0 498.1,326.0 498.1,310.0" fill="#EFFFFB"/>
+</g>
+<path d="M512 352 L512 432" stroke="#9FF5E4" stroke-opacity=".6" stroke-width="3" filter="url(#glow)"/>
+<path d="M482 742 L512 768 L542 742" fill="none" stroke="#5FE3C8" stroke-width="4" opacity=".75" filter="url(#glow)"/>
+</svg>
