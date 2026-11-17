@@ -4,7 +4,8 @@
 
 <p align="center">
   <b>Business Process &amp; System Engineer</b> · CEO of the4ce GmbH<br>
-  I connect business processes with the systems behind them: ERP, workflow automation and AI.
+  I connect business processes with the systems behind them: ERP, workflow automation and AI.<br>
+  Strong in <b>Python</b> and in designing <b>AI system architectures</b>. Future-oriented: I build for what comes next.
 </p>
 
 <p align="center">
