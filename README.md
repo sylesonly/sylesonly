@@ -1,9 +1,10 @@
 <p align="center">
-  <img src="banner-eyes.gif" alt="Bajram Murati" width="100%">
+  <img src="banner-clean.gif" alt="Bajram Murati" width="100%">
 </p>
 
 <p align="center">
   <b>Business Process &amp; System Engineer</b> · CEO of the4ce GmbH<br>
+  <span style="letter-spacing:2px">AUTOMATION · AI SYSTEMS · TRADING TECHNOLOGY</span><br>
   I connect business processes with the systems behind them: ERP, workflow automation and AI.<br>
   Strong in <b>Python</b> and in designing <b>AI system architectures</b>. Future-oriented: I build for what comes next.
 </p>
