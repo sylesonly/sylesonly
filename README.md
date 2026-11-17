@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.gif?v=2" alt="Bajram Murati" width="100%">
+  <img src="banner-v2.gif" alt="Bajram Murati" width="100%">
 </p>
 
 <p align="center">
